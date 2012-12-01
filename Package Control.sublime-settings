@@ -1,0 +1,21 @@
+{
+	"auto_upgrade_last_run": 1353935378,
+	"installed_packages":
+	[
+		"Backbone.js",
+		"Console API Snippets (JavaScript)",
+		"CSS Snippets",
+		"Gist",
+		"Git",
+		"HTML5",
+		"jQuery Snippets pack",
+		"JS Minify",
+		"JsFormat",
+		"Markdown Preview",
+		"MarkdownBuild",
+		"Package Control",
+		"Sublime-HTMLPrettify",
+		"SublimeLinter",
+		"Updater"
+	]
+}
