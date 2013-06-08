@@ -1,54 +1,75 @@
+####################################################################
+#																   #
+#  Git Config File - Contains all aliases and custom Git Settings  #
+#																   #
+####################################################################
+
+# git <command> [--flag] [filename]
+
 [user]
 	name = jaredwilli
 	email = jaredwilli@gmail.com
 [alias]
-	a = add 																# add to stage
+	a = add . 																# add all modified and untracked files to be staged
 	p = add -p 																# add with patch mode
 	c = commit -m 															# commit with message
-	ca = commit -a -m 														# commit all files changed since last commit
-	cl = clone 																# clone repository
+	can = commit -a -m 														# commit all files changed since last commit
+	dup = clone 															# clone repository
 	s = status 																# status
 	l = log 																# log of commits
 	d = diff 																# diff
-	dc = diff --cached														# diff cached
-	b = branch																# branch
+	dcache = diff --cached													# diff cached
+	b = branch																# create branch
+	check = checkout														# checkout
 	f = fetch 																# fetch
+	pull = pull --rebase													# pull and rebase to move to the HEAD of tree
 	m = merge 																# merge
 	t = tag 																# tag
 	ss = show 																# show
 	r = reset 																# reset
+	head = reset HEAD														# hard reset a file
+	hard = reset --hard 													# abandon everything since your last commit
+  	soft = reset --soft HEAD^ 												# undo last commit but keep the changes in the staging area for editing
 	li = ls-files 															# all files in the index and under version control
 	list = config --list 													# list all configs
 	last = log -1 HEAD 														# log last commit
-	ign = ls-files -o -i --exclude-standard									# show files ignored by git
+	last5 = log -5 HEAD														# log last 5 commits
+	ignored = ls-files -o -i --exclude-standard								# show files ignored by git
 	graph = log --all --graph --decorate --oneline -n30						# show log graph
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit			# show log graph by commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all	# show log graph by commit all
+	bycommit = log --graph --decorate --pretty=oneline --abbrev-commit		# show log graph by commit
+    byall = log --graph --decorate --pretty=oneline --abbrev-commit --all	# show log graph by commit all
 	unstage = reset HEAD --													# unstage
-	rgrep = !git grep 														# search from top of repository
-	rhard = reset --hard 													# abandon everything since your last commit
-  	rsoft = reset --soft HEAD^ 												# undo last commit but keep the changes in the staging area for editing
+	grep = !git grep 														# search from top of repository
+
+
 [core]
-	excludesfile = c:/Users/user/.global_ignore
-#[color]
-#    ui = auto
-#[color "branch"]
-#    current = yellow reverse
-#    local = yellow
-#    remote = green
-#[color "diff"]
-#    meta = yellow bold
-#    frag = magenta bold
-#    old = red bold
-#    new = green bold
-#[color "status"]
-#    added = yellow
-#    changed = green
-#    untracked = red
-# Highlight whitespace in diffs
-#  [color]
-#    ui = true
-#  [color "diff"]
-#    whitespace = red reverse
-#  [core]
-#    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = c:/Users/%username%/.global_ignore
+
+########################################
+#
+# Commented out because of buggs bunny
+#
+
+
+# [color]
+#     ui = auto
+# [color "branch"]
+#     current = yellow reverse
+#     local = yellow
+#     remote = green
+# [color "diff"]
+#     meta = yellow bold
+#     frag = magenta bold
+#     old = red bold
+#     new = green bold
+# [color "status"]
+#     added = yellow
+#     changed = green
+#     untracked = red
+#  Highlight whitespace in diffs
+#   [color]
+#     ui = true
+#   [color "diff"]
+#     whitespace = red reverse
+#   [core]
+#     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol

@@ -1,0 +1,29 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Backbone.js",
+		"BuildMarkdown",
+		"cdnjs",
+		"Console API Snippets (JavaScript)",
+		"CSS Snippets",
+		"Gist",
+		"Git",
+		"Grunt",
+		"HTML5",
+		"Jasmine",
+		"JavaScript Snippets",
+		"jQuery Snippets pack",
+		"JS Snippets",
+		"JsFormat",
+		"JSHint",
+		"JSHint Inline",
+		"Markdown Preview",
+		"MarkdownBuild",
+		"Package Control",
+		"Sublime-HTMLPrettify",
+		"SublimeLinter",
+		"SublimeLog",
+		"Updater"
+	]
+}
