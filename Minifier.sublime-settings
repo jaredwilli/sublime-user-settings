@@ -1,6 +1,0 @@
-{
-    // the closure compiler adds new lines every 500 characters
-    // for some proxies that choke with lines longer than that... don't care?
-    // set this setting to true.
-    "remove_new_lines": true
-}
